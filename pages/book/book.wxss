@@ -1,0 +1,68 @@
+/* pages/book/book.wxss */
+@import "../user/user.wxss";
+
+page {
+  background: #f2f2f2;
+}
+
+.top {
+  height: 230rpx;
+  width: 100%;
+  background: #078fec;
+}
+
+.char {
+  background: white;
+  width: 90%;
+  border-radius: 10rpx;
+  margin: 0 auto;
+}
+
+.centent {
+  padding: 25rpx;
+}
+
+.text_2 {
+  margin-top: 10rpx;
+  font-size: 28rpx;
+  color: #333;
+}
+
+.gantanhao {
+  width: 35rpx;
+  height: 35rpx;
+  display: inline-block;
+  margin-left: 25rpx;
+  margin-top: 25rpx;
+  margin-right: 25rpx;
+}
+
+/* 底部 */
+
+.bottom {
+  position: absolute;
+  bottom: 0;
+  height: 100rpx;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  background: white;
+}
+.page_row{
+  width: 75%;
+}
+.btn {
+  height: 100%;
+  width: 25%;
+  line-height: 100rpx;
+  padding: 0 25rpx 0 25rpx;
+  background: #ff7d13;
+  color: white;
+  text-align: center;
+  float: right
+}
+.text_1{
+  line-height: 100rpx;
+  color: #ff7d13;
+  margin-left: 15rpx;
+}

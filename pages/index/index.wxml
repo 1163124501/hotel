@@ -1,0 +1,81 @@
+<!--index.wxml-->
+<view class="top_img">
+  <image src='/image/top_img.jpg'></image>
+</view>
+<view class='char'>
+  <view class='centent'>
+    <image src='/image/add_icon.png' bindtap='location'></image>
+    <view class='text' bindtap='location'>地图导航</view>
+    <image style='margin-left:300rpx' src='/image/phone.png' bindtap='makePhoneCall'></image>
+    <view class='text' bindtap='makePhoneCall'>酒店热线</view>
+    <view class='xian'></view>
+    <view class='ruzhuriqi'>
+      <view>入驻日期</view>
+      <view>共 {{num}} 晚</view>
+      <view>离店日期</view>
+    </view>
+    <view class='ruzhushijian'>
+      <view style='color:#000; font-weight: bold'>
+        <picker mode="date" value="{{start_date}}" start="{{data}}" end="2018-12-31" bindchange="start_date">{{start_date}}</picker>
+      </view>
+      <view>|</view>
+            <view style='color:#000; font-weight: bold'>
+        <picker mode="date" value="{{end_date}}" start="{{data}}" end="2018-12-31" bindchange="end_date">{{end_date}}</picker>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class='list'>
+  <view class='centent'>
+    <image src='/image/top_img.jpg'></image>
+    <view>
+      <view class='list_price'>
+        <view style='font-size: 25rpx;'>¥</view>
+        <view style='font_size:44rpx;margin_left:15rpx'>99</view>
+      </view>
+      <view class='list_text'>标准间</view>
+      <view class='list_order' bindtap='order'>在线预订</view>
+      <view class='list_text'>
+        <image src='/image/icon_1.png'></image>
+        <image src='/image/icon_2.png'></image>
+        <image src='/image/icon_3.png'></image>
+      </view>
+    </view>
+  </view>
+  <view class='fenge'></view>
+  <view class='centent'>
+    <image src='/image/top_img.jpg'></image>
+    <view>
+      <view class='list_price'>
+        <view style='font-size: 25rpx;'>¥</view>
+        <view style='font_size:44rpx;margin_left:15rpx'>119</view>
+      </view>
+      <view class='list_text'>行政间</view>
+      <view class='list_order'>在线预订</view>
+      <view class='list_text'>
+        <image src='/image/icon_4.png'></image>
+        <image src='/image/icon_5.png'></image>
+        <image src='/image/icon_6.png'></image>
+      </view>
+    </view>
+  </view>
+
+  <view class='fenge'></view>
+  <view class='centent'>
+    <image src='/image/top_img.jpg'></image>
+    <view>
+      <view class='list_price'>
+        <view style='font-size: 25rpx;'>¥</view>
+        <view style='font_size:44rpx;margin_left:15rpx'>169</view>
+      </view>
+      <view class='list_text'>豪华间</view>
+      <view class='list_order'>在线预订</view>
+      <view class='list_text'>
+        <image src='/image/icon_7.png'></image>
+        <image src='/image/icon_8.png'></image>
+        <image src='/image/icon_3.png'></image>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,39 @@
+<!--pages/book/book.wxml-->
+<view class='top'>
+  <view class='char'>
+    <view class='centent'>
+      <view>标准间</view>
+      <view class='text_2'>2018-03-25 | 2018-03-03 共一晚</view>
+      <view class='text_2'>押金： 20元/间 空调，免费茶水</view>
+    </view>
+  </view>
+</view>
+
+<view class="qbdd mt10">
+  <span class="font_14 c3">房间数</span>
+  <image src='../../image/arrowright.png' class='store_icon' style="width:40rpx; height: 40rpx;"></image>
+</view>
+<view class="qbdd mt10">
+  <span class="font_14 c3">姓名</span>
+</view>
+<view class="qbdd mt10">
+  <span class="font_14 c3">手机号</span>
+</view>
+<view class="qbdd mt10">
+  <span class="font_14 c3">到店时间</span>
+  <image src='../../image/arrowright.png' class='store_icon' style="width:40rpx; height: 40rpx;"></image>
+</view>
+<view class="qbdd mt10">
+  <span class="font_14 c3">发票</span>
+</view>
+
+
+<image class='gantanhao' src='/image/gantanhao.png'></image>
+<text style='font-size:25rpx;'>请提前打电话预约房间</text>
+<view class='bottom'>
+  <view class='page_row'>
+    <view class='text_1' style='font-size: 25rpx;'>结算 ¥</view>
+    <view class='text_1' style='font_size:44rpx;margin_left:15rpx'>99 </view>
+  </view>
+  <view class='btn' bindtap='btn'>提交订单</view>
+</view>

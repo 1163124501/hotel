@@ -1,0 +1,29 @@
+<!--pages/user/user.wxml-->
+  <image class='store_img_bj' wx:if="{{userInfo.avatarUrl}}" src="{{userInfo.avatarUrl}}" mode="aspectFill"></image>
+  <view class="userinfo">
+    <image class="userinfo-avatar fl_l" wx:if="{{userInfo.avatarUrl}}" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="fl_l" wx:if="{{userInfo.nickName != 'undefined'}}">{{userInfo.nickName}} </text>
+    <button class="fl_l" wx:else open-type="getUserInfo" bindgetuserinfo="user_Info">点击授权登录</button>
+        <button wx:if="{{!hasUserInfo}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+  </view>
+
+  <navigator url="../address/user-address/user-address">
+    <view class="qbdd mt10">
+      <span class="font_14 c3">我的订单</span>
+      <image src='../../images/phone.png' class='store_icon' style="width:40rpx; height: 40rpx;"></image>
+      <!-- <span class="fl_r c9 font_12 l_h20" hover-class="none"> ></span> -->
+    </view>
+  </navigator>
+  <navigator url="../address/user-address/user-address">
+    <view class="qbdd mt10">
+      <span class="font_14 c3">酒店客服电话</span>
+      <image src='../../images/phone.png' class='store_icon' style="width:40rpx; height: 40rpx;"></image>
+      <!-- <span class="fl_r c9 font_12 l_h20" hover-class="none"> ></span> -->
+    </view>
+  </navigator>
+  <navigator url="../distribution/distribution" open-type='switchTab'>
+    <view class="qbdd mt10">
+      <span class="font_14 c3">在线客服</span>
+      <image src='../../images/phone.png' class='store_icon' style="width:40rpx; height: 40rpx;"></image>
+    </view>
+  </navigator>

@@ -1,0 +1,24 @@
+<!--pages/order/order.wxml-->
+<view class='char'>
+  <view class='centent'>
+    <image src='/image/top_img.jpg'></image>
+    <view class='text'>地址：深圳市宝安区坪洲地铁站麻布新村</view>
+    </view>
+</view>
+<view class='jiudian_title'>
+<view>酒店简介</view>
+<view class='detail'>欣欣酒店，为您提供最温馨最舒适的住宿体验</view>
+</view>
+
+<view class='jiudian_title'>
+<view>酒店设施</view>
+<!-- 分类 -->
+  <view class="big-logo">
+    <block wx:for="{{store_logos}}" wx:key="">
+          <view class="logoinfo">
+            <image style="width:80rpx; height: 80rpx;" src="{{item.image}}" mode="aspectFit" />
+             <text class="logotext">{{item.title}}</text> 
+          </view>
+    </block>
+  </view>
+</view>

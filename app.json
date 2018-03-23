@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/book/book",
+    "pages/order/order",
+    "pages/user/user"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#078FEC",
+    "enablePullDownRefresh": true,
+    "backgroundColor": "#078FEC",
+    "navigationBarTitleText": "欣欣酒店",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#858585",
+    "selectedColor": "#F6AF1B",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "image/01.png",
+        "selectedIconPath": "image/011.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/order/order",
+        "iconPath": "image/02.png",
+        "selectedIconPath": "image/022.png",
+        "text": "酒店介绍"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "iconPath": "image/03.png",
+        "selectedIconPath": "image/033.png",
+        "text": "会员中心"
+      }
+    ]
+  }
+}

@@ -1,0 +1,61 @@
+/* pages/order/order.wxss */
+page{
+  background: #f2f2f2;
+  font-size: 32rpx;
+}
+.char{
+  width: 92%;
+  left: 4%;
+  margin: 20rpx;
+  border-radius: 10rpx;
+  background: white
+}
+.centent{
+  padding: 20rpx;
+}
+.char image{
+  width: 100%;
+  height: 300rpx;
+}
+.char .centent .text{
+  font-size: 32rpx;
+  margin: 15rpx;
+  text-align: center;
+}
+
+.jiudian_title{
+  background: white;
+  margin: 15rpx 0 15rpx 0;
+  padding: 20rpx
+}
+.detail{
+  font-size: 28rpx;
+  color: #666;
+  margin: 15rpx 0 15rpx 65rpx;
+}
+
+/* 分类 */
+.big-logo {
+  display: flex;
+  padding-top: 10rpx;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.logoinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 150rpx;
+  height: 150rpx;
+}
+
+.logoinfo image {
+  border-radius: 50%;
+}
+
+.logotext {
+  color: #aaa;
+  font-size: 22rpx;
+}
